@@ -6,7 +6,6 @@ import (
 )
 
 func TestGetAPIKey(t *testing.T) {
-	return
 	tests := []struct {
 		name      string
 		headers   http.Header
