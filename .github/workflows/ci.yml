@@ -13,7 +13,7 @@ jobs:
       - name: Format check
         run: test -z $(go fmt ./...)
 
-      - name: Run staticcheck
+      - name: staticcheck
         uses: dominikh/staticcheck-action@v1
 
 
