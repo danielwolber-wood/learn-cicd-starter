@@ -16,7 +16,7 @@ jobs:
       - name: Format check
         run: test -z $(go fmt ./...)
 
-      - name: Install staticcheck
+      - name: Install staticcheck manually
         run: |
           go install honnef.co/go/tools/cmd/staticcheck@latest
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
